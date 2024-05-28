@@ -2,7 +2,7 @@ package ru.kaplaan.bot.web.dto.event
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
-data class MessageDto(
+data class Message(
 
     @field:JsonProperty("from_id")
     val fromId: Int,

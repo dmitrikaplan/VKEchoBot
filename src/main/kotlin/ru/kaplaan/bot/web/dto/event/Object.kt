@@ -4,5 +4,5 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 data class Object(
     @field:JsonProperty("message")
-    val message: MessageDto?
+    val message: Message
 )
