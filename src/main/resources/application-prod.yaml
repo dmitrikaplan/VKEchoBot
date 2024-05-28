@@ -30,4 +30,4 @@ server:
 
 logging:
   level:
-    ru.kaplaan.bot: debug
+    ru.kaplaan.bot: INFO
