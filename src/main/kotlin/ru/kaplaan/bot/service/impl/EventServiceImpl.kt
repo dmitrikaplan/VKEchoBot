@@ -28,7 +28,6 @@ class EventServiceImpl(
                     methodEndpoint = Method.GET_CALLBACK_CONFIRMATION_CODE.endpoint,
                     uriVariables = uriVariablesBuilderService.buildConfirmationUriVariables()
                 ).also { confirmationCodeDto ->
-                    //TODO("Добавить exception handling")
                     if (confirmationCodeDto.isError()){
                         log.error(confirmationCodeDto.error!!.toString())
                         throw VkApiServerResponseException(confirmationCodeDto.error.toString())
