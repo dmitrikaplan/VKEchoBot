@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: VkEchoBot
+
+bot:
+  access_token: ${ACCESS_TOKEN}
+  group_id: ${GROUP_ID}
+
+vk:
+  api-version: ${VK_API_VERSION}
+  api-url: ${API_URL}
+
+callback-server:
+  info:
+    title: ${CALLBACK_SERVER_INFO_TITLE}
+    url: ${CALLBACK_SERVER_INFO_URL}
+
+  settings:
+    message_new: ${CALLBACK_SERVER_SETTINGS_MESSAGE_NEW}
+    message_reply: ${CALLBACK_SERVER_SETTINGS_MESSAGE_REPLY}
+    message_allow: ${CALLBACK_SERVER_SETTINGS_MESSAGE_ALLOW}
+    message_edit: ${CALLBACK_SERVER_SETTINGS_MESSAGE_EDIT}
+    message_deny: ${CALLBACK_SERVER_SETTINGS_MESSAGE_DENY}
+    message_typing_state: ${CALLBACK_SERVER_SETTINGS_MESSAGE_TYPING_STATE}
+    message_read: ${CALLBACK_SERVER_SETTINGS_MESSAGE_READ}
+
+
+server:
+  port: ${SERVER_PORT}
+
+logging:
+  level:
+    ru.kaplaan.bot: debug
