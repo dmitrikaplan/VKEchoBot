@@ -1,9 +1,6 @@
 package ru.kaplaan.bot.service.impl
 
-import jakarta.validation.Valid
-import jakarta.validation.groups.Default
 import org.springframework.stereotype.Service
-import org.springframework.validation.annotation.Validated
 import ru.kaplaan.bot.domain.properties.BotProperties
 import ru.kaplaan.bot.domain.properties.CallbackServerProperties
 import ru.kaplaan.bot.domain.properties.CallbackServerSettingsProperties

@@ -3,7 +3,6 @@ package ru.kaplaan.bot.web.dto
 import jakarta.validation.constraints.NotNull
 import jakarta.validation.constraints.Null
 import org.hibernate.validator.group.GroupSequenceProvider
-import ru.kaplaan.bot.web.dto.confirmation.CodeDto
 import ru.kaplaan.bot.web.validation.ServerResponseGroupSequenceProvider
 import ru.kaplaan.bot.web.validation.group.Response
 
