@@ -14,4 +14,4 @@ RUN ./gradlew build
 FROM bellsoft/liberica-openjdk-alpine
 
 COPY --from=build /source/build/libs/VkEchoBot.jar /vk-echo-bot.jar
-CMD java -jar vk-echo-bot.jar
+CMD java -jar vk-echo-bot.jar --spring.profiles.active=prod
