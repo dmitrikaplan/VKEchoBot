@@ -10,6 +10,11 @@ vk:
   api-version: ${VK_API_VERSION}
   api-url: ${API_URL}
 
+
+headers:
+  retry-after:
+    delay-seconds: ${RETRY_AFTER_DELAY_SECONDS}
+
 callback-server:
   info:
     title: ${CALLBACK_SERVER_INFO_TITLE}
