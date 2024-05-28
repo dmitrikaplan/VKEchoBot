@@ -17,5 +17,5 @@ data class EventDto(
     val type: EventType,
 
     @field:JsonProperty("object")
-    val obj: ObjectDto
+    val obj: Object
 )

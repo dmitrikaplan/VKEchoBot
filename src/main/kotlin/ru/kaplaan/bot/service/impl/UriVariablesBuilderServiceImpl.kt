@@ -28,7 +28,7 @@ class UriVariablesBuilderServiceImpl(
 
     override fun buildMessageNewUriVariables(eventDto: EventDto): Map<String, String>{
         return buildDefaultUriVariables().apply {
-            this["peer_id"] = eventDto.obj!!.message!!.peerId.toString()
+            this["peer_id"] = eventDto.obj.message!!.peerId.toString()
             this["message"]  = "Вы сказали: ${eventDto.obj.message!!.text}".let {
                 if(it.length <= 4096)
                     it
