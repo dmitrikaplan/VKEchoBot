@@ -14,6 +14,4 @@ data class CallbackServerProperties (
     val title: String,
     @field:URL
     val url: String
-){
-    var serverId: Int? = null
-}
+)

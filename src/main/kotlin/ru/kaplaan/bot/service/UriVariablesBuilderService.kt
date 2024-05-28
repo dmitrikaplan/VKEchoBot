@@ -17,6 +17,6 @@ interface UriVariablesBuilderService {
 
     fun buildAddCallbackServerUriVariables(): Map<String, String>
 
-    fun buildSetCallbackServerSettings(): Map<String, String>
+    fun buildSetCallbackServerSettings(serverId: Int): Map<String, String>
 
 }

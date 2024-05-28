@@ -62,9 +62,9 @@ class UriVariablesBuilderServiceImpl(
         }
     }
 
-    override fun buildSetCallbackServerSettings(): Map<String, String> {
+    override fun buildSetCallbackServerSettings(serverId: Int): Map<String, String> {
         return buildDefaultUriVariables().apply {
-            this["server_id"] = callBackServerProperties.serverId!!.toString()
+            this["server_id"] = serverId.toString()
             this["group_id"] = botProperties.groupId.toString()
             this["api_version"] = vkApiProperties.apiVersion
 

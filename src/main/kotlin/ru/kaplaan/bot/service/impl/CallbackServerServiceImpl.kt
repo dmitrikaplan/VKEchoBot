@@ -59,17 +59,14 @@ class CallbackServerServiceImpl(
                 throw VkApiServerResponseException(it.error.toString())
             }
 
-        }.let{
-            callBackServerProperties.serverId = it.response!!.serverId
-            it.response.serverId
-        }
+        }.response!!.serverId
 
     }
 
     override fun setCallbackSettings(serverId: Int): Int {
         return requestService.send<SetSettingsCallbackServerResponse>(
             methodEndpoint = Method.SET_CALLBACK_SERVER_SETTINGS.endpoint,
-            uriVariables =  uriVariablesBuilderService.buildSetCallbackServerSettings()
+            uriVariables =  uriVariablesBuilderService.buildSetCallbackServerSettings(serverId)
         ).also {
             if(it.isError()){
                 log.error(it.error!!.toString())
